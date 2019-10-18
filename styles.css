@@ -1,0 +1,63 @@
+body {
+  height: 100%;
+  margin: 0;
+  padding: 50px;
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ffffff+0,7db9e8+100 */
+  background: #ffffff; /* Old browsers */
+  background: -moz-radial-gradient(
+    center,
+    ellipse cover,
+    #ffffff 0%,
+    #7db9e8 100%
+  ); /* FF3.6-15 */
+  background: -webkit-radial-gradient(
+    center,
+    ellipse cover,
+    #ffffff 0%,
+    #7db9e8 100%
+  ); /* Chrome10-25,Safari5.1-6 */
+  background: radial-gradient(
+    ellipse at center,
+    #ffffff 0%,
+    #7db9e8 100%
+  ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#7db9e8',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+.info,
+#description {
+  margin: auto;
+  text-align: right;
+  font-weight: 600;
+}
+form {
+  max-width: 550px;
+  margin: 0 auto;
+}
+input,
+select,
+textarea {
+  margin: 0 auto;
+  max-width: 50%;
+}
+#everything {
+  border: 3px solid black;
+  border-radius: 9px;
+  max-width: 650px;
+  padding: 0px;
+  background: white;
+}
+@media (max-width: 768px) {
+  .info {
+    text-align: center;
+  }
+  label,
+  input[type="radio"] {
+    margin-left: 70px;
+  }
+}

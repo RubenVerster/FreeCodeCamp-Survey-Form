@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Form Of Surveyance</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js
+    "
+    />
+  </head>
+  <body>
+    <div id="everything" class="container align-center">
+      <h1 id="title" class="text-center p-4 bg-dark text-white">
+        Form Of Surveyance!
+      </h1>
+      <div id="main">
+        <div class="row text-center">
+          <p id="description">How ya feelin'?</p>
+        </div>
+        <form id="survey-form" action="POST">
+          <div class="row p-2">
+            <label id="name-label" class="col-md-6 info">Name:</label>
+            <input
+              id="name"
+              class="col-md-6"
+              type="text"
+              placeholder="Name"
+              required
+            />
+          </div>
+          <div class="row p-2">
+            <label id="email-label" class="col-md-6 info">Email:</label>
+            <input
+              id="email"
+              class="col-md-6"
+              type="email"
+              placeholder="Email"
+              required
+            />
+          </div>
+          <div class="row p-2">
+            <label id="number-label" class="col-md-6 info">Age:</label>
+            <input
+              min="1"
+              max="255"
+              id="number"
+              class="col-md-6"
+              type="number"
+              placeholder="Age"
+              required
+            />
+          </div>
+          <div class="row p-2">
+            <p class="col-md-6">Rate Your Mood:</p>
+            <select id="dropdown" class="col-md-6" name="mood">
+              <option disabled selected value>I'm Feeling...</option>
+              <option value="sunshine">Walking On Sunshine!</option>
+              <option value="sun">Sun's Out </option>
+              <option value="sky">Clear Skies</option>
+              <option value="cloud">Cloudy Day</option>
+              <option value="rain">Heavy Cloud Rain</option>
+              <option value="death">Call Of The Void</option>
+            </select>
+          </div>
+          <div class="row p-2">
+            <p class="col-md-6">Which One Would Improve Your Mood?</p>
+            <div class="col-md-6">
+              <input type="radio" name="food" value="icecream" /> Ice Cream<br />
+              <input type="radio" name="food" value="cake" /> Cake<br />
+              <input type="radio" name="food" value="waffle" /> Waffles
+            </div>
+          </div>
+          <div class="row p-2">
+            <p class="col-md-6">Choose Any Of The Following Activities</p>
+            <ul class="col-md-6">
+              <li>
+                <label
+                  ><input name="activity" value="1" type="checkbox" />Walk On
+                  The Beach</label
+                >
+              </li>
+              <li>
+                <label
+                  ><input name="activity" value="2" type="checkbox" />Cuddle And
+                  Movie (with snacks)</label
+                >
+              </li>
+              <li>
+                <label
+                  ><input name="activity" value="3" type="checkbox" />Swing In A
+                  Park</label
+                >
+              </li>
+              <li>
+                <label
+                  ><input name="activity" value="4" type="checkbox" />Build Some
+                  LEGO</label
+                >
+              </li>
+              <li>
+                <label
+                  ><input name="activity" value="5" type="checkbox" />Dance The
+                  Night Away</label
+                >
+              </li>
+              <li>
+                <label
+                  ><input name="activity" value="6" type="checkbox" />Visit A
+                  Local Farmer's Market</label
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="row p-2">
+            <p class="col-md-6">Anything Interesting Happen Recently?</p>
+            <textarea
+              class="col-md-6"
+              type="textarea"
+              rows="3"
+              placeholder="Enter Text Here"
+            ></textarea>
+          </div>
+          <div class="col text-center">
+            <button
+              type="submit"
+              id="submit"
+              class="btn btn-lg btn-primary m-3"
+            >
+              Submit
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
